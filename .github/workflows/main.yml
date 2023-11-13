@@ -12,4 +12,4 @@ jobs:
       - name: 'after set up'
         run: ls
       - name: 'login docker'
-        run: docker login --username hendhany --password dckr_pat_28xatMCkLxM8dZH36cGDoVn8ltc  
+        run: docker login --username ${{secrets.docker_userName}} --password ${{secrets.docker_password}}  
