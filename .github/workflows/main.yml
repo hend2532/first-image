@@ -11,3 +11,5 @@ jobs:
       - uses: actions/checkout@v3
       - name: 'after set up'
         run: ls
+      - name: 'login docker'
+        run: docker login --username hendhany --password dckr_pat_28xatMCkLxM8dZH36cGDoVn8ltc  
