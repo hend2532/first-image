@@ -3,16 +3,13 @@ on:
     branches:
       - master
 
-
-
-
-jobs: 
+jobs:
   build:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
-      - name: 'test file pat'
+      - name: 'test file path'
         run: pwd
-        
+
       - name: 'test printing'
         run: echo hend
