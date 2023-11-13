@@ -11,5 +11,4 @@ jobs:
       - name: 'test file path'
         run: pwd
 
-      - name: 'test printing'
-        run: echo hend
+      - uses: actions/checkout@v3
