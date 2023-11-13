@@ -12,4 +12,9 @@ jobs:
       - name: 'after set up'
         run: ls
       - name: 'login docker'
-        run: docker login --username ${{secrets.docker_userName}} --password ${{secrets.docker_password}}  
+        run: docker login --username ${{secrets.docker_userName}} --password ${{secrets.docker_password}} 
+      
+      - name: 'build image'
+        run: docker build -t ${{secrets.docker_userName}}/task2 .
+      - name: 'push image'
+        run: docker push ${{secrets.docker_userName}}/task2
