@@ -1,1 +1,16 @@
+on:
+  push:
+    branches:
+      - master
 
+
+
+
+jops: 
+  build:
+    run-on: ubuntu-latest
+    steps:
+      - name: "test file path"
+        run: pwd
+      - name: "test printing"
+        run: echo hend
