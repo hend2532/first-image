@@ -9,8 +9,10 @@ on:
 jobs: 
   build:
     run-on: ubuntu-latest
+
     steps:
-      - name: "test file path"
+      - name: 'test file pat'
         run: pwd
-      - name: "test printing"
+        
+      - name: 'test printing'
         run: echo hend
